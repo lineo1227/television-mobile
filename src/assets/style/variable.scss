@@ -1,0 +1,72 @@
+$color-purple: #7d12ff;
+$color-purple-light: #13131e;
+$border-color: linear-gradient(rgba(128, 0, 128, 0.305), rgba(255, 255, 255, 0.305));
+$color-white-light: rgba(255, 255, 255, 0.7);
+@mixin flex($fd: row, $ai: auto, $jc: auto) {
+  display: flex;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+}
+@mixin position($pos: relative, $l: auto, $t: auto, $r: auto, $b: auto) {
+  position: $pos;
+  left: $l;
+  top: $t;
+  right: $r;
+  bottom: $b;
+}
+@mixin border() {
+  background-clip: padding-box, border-box;
+  border: 2px solid transparent;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(to right, $color-purple-light, $color-purple-light),
+    $border-color;
+}
+@mixin boxPadding($pd) {
+  padding: $pd;
+  box-sizing: border-box;
+}
+@mixin RouterCss($min-height: 100vh) {
+  color: white;
+  min-height: $min-height;
+
+  .el-pagination {
+    .btn-prev:disabled,
+    .btn-next:disabled {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: rgba(245, 245, 245, 0.639);
+
+      &:hover {
+        color: rgba(245, 245, 245, 0.639);
+      }
+    }
+
+    .el-pager {
+      .number {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: whitesmoke;
+      }
+    }
+
+    .btn-prev,
+    .btn-next {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: whitesmoke;
+      transition: 0.3s;
+
+      &:hover {
+        color: $color-purple;
+      }
+    }
+  }
+
+  &__container {
+    width: 1188px;
+    margin: 0 auto;
+
+    &-pagination {
+      margin: 0 auto 100px;
+      @include flex($jc: center);
+    }
+  }
+}
