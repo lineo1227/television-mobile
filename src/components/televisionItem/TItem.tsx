@@ -2,7 +2,6 @@ import "./t-item.scss";
 import { Image } from "antd-mobile";
 import testPng from "@/assets/images/test.png";
 function TItem() {
-    console.log("TItem");
     return (
         <div className="t-item">
             <div className="t-item-container">

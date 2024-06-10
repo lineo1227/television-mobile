@@ -33,7 +33,7 @@ export default function LHeader(props: Props) {
                     onSearch={handleSearch}
                     placeholder="猫和老鼠"
                     showCancelButton={() => !link}
-                    onCancel={() => navigate("/")}
+                    onCancel={() => navigate(-1)}
                 />
             )}
         </div>
