@@ -3,6 +3,11 @@
     width: 107rem;
     height: 184rem;
     border-radius: 4rem;
+    margin-bottom: 4rem;
+    margin-right: 5rem;
+    &:nth-child(3n) {
+        margin-right: 0rem;
+    }
     @include border();
     overflow: hidden;
     &-container {
@@ -19,7 +24,6 @@
         }
         span {
             margin: 0;
-
             font-size: 10rem;
             color: $color-white-light-2;
         }

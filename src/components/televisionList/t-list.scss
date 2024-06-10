@@ -18,8 +18,9 @@
         }
     }
     &__content {
-        height: 184rem;
         width: 100%;
-        @include flex($ai: center, $jc: space-between);
+        @include flex($ai: center);
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
     }
 }

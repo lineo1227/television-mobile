@@ -1,5 +1,5 @@
 import "./t-list.scss";
-import TItem from "../televisionItem/TItem";
+import List from "./List";
 interface Props {
     title: string;
 }
@@ -10,11 +10,7 @@ function TList(props: Props) {
                 <h3>{props.title}</h3>
                 <span>更多</span>
             </div>
-            <div className="t-list__content">
-                <TItem />
-                <TItem />
-                <TItem />
-            </div>
+            <List />
         </div>
     );
 }

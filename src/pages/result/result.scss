@@ -1,0 +1,13 @@
+.result {
+    background-color: #191825;
+    height: 100vh;
+    font-size: 16rem;
+    color: #fff;
+    &-container {
+        margin: 0 20rem;
+        h4 {
+            font-size: 14rem;
+            margin-bottom: 10rem;
+        }
+    }
+}
