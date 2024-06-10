@@ -19,7 +19,7 @@ const tabs = [
         icon: <BankcardOutline />,
     },
     {
-        key: "/search",
+        key: "/should",
         title: "求片",
         icon: <MessageOutline />,
     },

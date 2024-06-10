@@ -14,7 +14,7 @@
             height: 100%;
             width: 100%;
             @include position($pos: absolute, $t: 0);
-            background: linear-gradient(#000, transparent, #13131e);
+            background: linear-gradient(#191825, transparent, #13131e);
             letter-spacing: 2rem;
             h1 {
                 transform: translateX(-50%);

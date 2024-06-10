@@ -1,0 +1,34 @@
+@import "@/assets/style/variable.scss";
+.search {
+    font-size: 16rem;
+    background-color: #191825;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    .history {
+        margin: 2rem 20rem 14rem;
+        &-title {
+            letter-spacing: 1rem;
+            h3 {
+                font-size: 18rem;
+                color: white;
+            }
+            @include flex($jc: space-between);
+            color: $color-white-light-2;
+        }
+        &-content {
+            @include flex($ai: center);
+            margin-top: 12rem;
+            flex-wrap: wrap;
+            span {
+                background-color: #30303b;
+                font-weight: 100;
+                @include boxPadding(4rem 8rem);
+                margin-left: 4rem;
+                margin-top: 4rem;
+                color: $color-white-light;
+                border-radius: 4rem;
+            }
+        }
+    }
+}

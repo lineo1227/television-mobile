@@ -6,7 +6,7 @@ import Recommend from "../../components/recommend/Recommend";
 export default function Home() {
     return (
         <div className="home">
-            <LHeader />
+            <LHeader link={true} />
             <Advertisement />
             <TList title="最近更新" />
             <TList title="正在热播" />

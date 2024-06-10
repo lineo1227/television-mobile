@@ -2,7 +2,7 @@
 .l-header {
     height: 92rem;
     @include boxPadding(17rem 20rem 12rem);
-    background-color: black;
+    background-color: #191825;
     @include flex($fd: column, $jc: space-between, $ai: center);
     &__title {
         width: 100%;
@@ -19,5 +19,10 @@
         height: 20rem;
         width: 20rem;
         border-radius: 50%;
+    }
+    .adm-search-bar-suffix {
+        span {
+            color: white;
+        }
     }
 }

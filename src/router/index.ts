@@ -4,6 +4,7 @@ import Search from "@/pages/search/Search";
 import Brower from "@/pages/brower/Brower";
 import Order from "@/pages/order/Order";
 import Index from "@/pages/Index";
+import Should from "@/pages/should/Should";
 const router = createHashRouter([
     {
         path: "/",
@@ -13,8 +14,8 @@ const router = createHashRouter([
             Component: Home
         },
         {
-            path: "/search",
-            Component: Search
+            path: "/should",
+            Component: Should
         }, {
             path: "/brower",
             Component: Brower
@@ -25,6 +26,10 @@ const router = createHashRouter([
         }
         ]
     },
+    {
+        path: "/search",
+        Component: Search
+    }
 
 ]);
 
