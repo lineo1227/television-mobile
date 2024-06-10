@@ -1,0 +1,27 @@
+@import "@/assets/style/variable.scss";
+.t-item {
+    width: 107rem;
+    height: 184rem;
+    border-radius: 4rem;
+    @include border();
+    overflow: hidden;
+    &-container {
+        background-color: rgba($color: #000000, $alpha: 0);
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(20rem);
+        @include boxPadding(4rem 0 6rem);
+        @include flex($fd: column, $jc: space-between, $ai: center);
+        p {
+            font-size: 11rem;
+            color: white;
+            margin: 0;
+        }
+        span {
+            margin: 0;
+
+            font-size: 10rem;
+            color: $color-white-light-2;
+        }
+    }
+}

@@ -79,17 +79,17 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
+    margin: 0;
 
-  padding: 0;
+    padding: 0;
 
-  border: 0;
+    border: 0;
 
-  font-size: 100%;
+    font-size: 100%;
 
-  font: inherit;
+    font: inherit;
 
-  vertical-align: baseline;
+    vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -105,53 +105,42 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 
 body {
-  line-height: 1;
+    line-height: 1;
 }
 
 ol,
 ul,
 li {
-  list-style: none;
+    list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+    content: "";
 
-  content: none;
+    content: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-:root {
-  --el-color-primary: #b67aff;
+.adm-search-bar {
+    --background: #474651;
+    --adm-color-background: #474651;
+    --adm-color-primary: #7d12ff;
 }
-.el-input {
-  --el-border-color: gray;
-  --el-input-focus-border: purple;
-  --el-input-focus-border-color: purple;
-}
-.el-button {
-  --el-button-bg-color: #9945ff;
-  --el-button-border-color: #9945ff;
-  --el-button-hover-bg-color: rgb(126, 20, 255);
-  --el-button-hover-border-color: rgb(126, 20, 255);
-  --el-button-active-bg-color: rgb(126, 20, 255);
-  --el-button-active-border-color: rgb(126, 20, 255);
-  --el-button-text-color: white;
-  --el-button-disabled-bg-color: rgb(80, 0, 80);
-  --el-button-hover-text-color: white;
+.adm-search-bar.adm-search-bar-active input {
+    color: white;
 }

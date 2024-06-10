@@ -1,0 +1,23 @@
+@import "../../assets/style/variable.scss";
+.l-tabar {
+    height: 50rem;
+    width: 100vw;
+    background-color: rgba(34, 31, 66, 1);
+    @include position($pos: fixed, $b: 0, $l: 0);
+    .adm-tab-bar-item-icon,
+    .adm-tab-bar-item-icon svg {
+        height: 22rem;
+        width: 22rem;
+    }
+    .adm-tab-bar-item-title,
+    .adm-tab-bar-item-title-with-icon {
+        font-size: 12rem;
+        height: 14rem;
+    }
+    .adm-tab-bar-item-active .adm-tab-bar-item-title-with-icon {
+        color: white;
+    }
+    .adm-tab-bar-item-active .adm-tab-bar-item-icon {
+        color: white;
+    }
+}

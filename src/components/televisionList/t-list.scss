@@ -1,0 +1,24 @@
+@import "@/assets/style/variable.scss";
+.t-list {
+    height: 224rem;
+    margin: 0 20rem 20rem;
+    &__title {
+        height: 24rem;
+        width: 100%;
+        margin-bottom: 14rem;
+        @include flex($ai: center, $jc: space-between);
+        h3 {
+            font-size: 18rem;
+            color: white;
+        }
+        span {
+            font-size: 13rem;
+            color: $color-white-light-2;
+        }
+    }
+    &__content {
+        height: 184rem;
+        width: 100%;
+        @include flex($ai: center, $jc: space-between);
+    }
+}

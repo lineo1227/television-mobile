@@ -1,0 +1,53 @@
+@import "@/assets/style/variable.scss";
+.recommend {
+    height: 190rem;
+    margin: 0 20px 20px;
+    border-radius: 6rem;
+    overflow: hidden;
+    position: relative;
+
+    &-container {
+        position: relative;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.8));
+        @include boxPadding(20rem);
+        h2 {
+            font-size: 20rem;
+            color: white;
+        }
+        p {
+            margin-top: 10rem;
+            font-size: 12rem;
+            color: $color-white-light-2;
+        }
+        ul {
+            margin-top: 10rem;
+            @include flex($jc: space-between);
+            li {
+                height: 95rem;
+                width: 95rem;
+                @include flex($fd: column);
+
+                span {
+                    margin-left: 4rem;
+                    font-size: 12rem;
+                    color: white;
+                    margin-top: 10rem;
+                    &:last-child {
+                        margin-top: 4rem;
+                        font-size: 9rem;
+                        color: $color-white-light-2;
+                    }
+                }
+            }
+        }
+    }
+    > img {
+        @include position($pos: absolute, $t: 0, $l: 0);
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
