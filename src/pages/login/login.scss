@@ -1,0 +1,38 @@
+@import "@/assets/style/variable.scss";
+.login {
+    height: 100vh;
+    width: 100vw;
+    background-color: $color-purple-light;
+    font-size: 16rem;
+    color: white;
+    @include flex($fd: column, $ai: center, $jc: center);
+    position: relative;
+    > span {
+        position: absolute;
+        bottom: 30rem;
+        right: 30rem;
+    }
+    h2 {
+        margin-left: 4rem;
+        font-size: 24rem;
+        margin-bottom: 20rem;
+    }
+    p {
+        margin-left: 4rem;
+        color: gainsboro;
+        margin-bottom: 36rem;
+    }
+    &-container {
+        margin: 0 24rem;
+        transform: translateY(-20rem);
+        button {
+            font-size: 14rem;
+            width: 100%;
+            border: none;
+            padding: 10rem 0;
+            border-radius: 10rem;
+            background-color: $color-purple;
+            color: white;
+        }
+    }
+}
