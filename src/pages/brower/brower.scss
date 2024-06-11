@@ -1,0 +1,15 @@
+.brower {
+    background-color: #191825;
+    min-height: 100vh;
+    font-size: 16rem;
+    color: #fff;
+    padding-bottom: 50rem;
+    &-container {
+        margin: 0 20rem;
+        h4 {
+            opacity: 0.5;
+            font-size: 14rem;
+            margin: 10rem 0 20rem;
+        }
+    }
+}
