@@ -1,0 +1,44 @@
+@import "@/assets/style/variable.scss";
+.should {
+    background-color: #191825;
+    min-height: 100vh;
+    font-size: 16rem;
+    &-container {
+        margin: 0 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .adm-text-area-element {
+            background-color: white;
+            border-radius: 4rem;
+            height: 100rem;
+            font-size: 13rem;
+        }
+        h2,
+        p {
+            width: 100%;
+            margin: 10rem 0 20rem;
+        }
+        h2 {
+            color: white;
+            margin: 14rem 0 0;
+
+            font-size: 18rem;
+        }
+        p {
+            color: $color-white-light-2;
+        }
+        button {
+            margin-top: 16rem;
+            background-color: $color-purple;
+            outline: none;
+            border: none;
+            color: white;
+            padding: 4rem 12rem;
+            border-radius: 2rem;
+            &:active {
+                background-color: darken($color: $color-purple, $amount: 20);
+            }
+        }
+    }
+}
